@@ -1,0 +1,365 @@
+/*UNIVERSAL*/
+body {
+    margin: 0px;
+    font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    background-color:  #EBEBEB;
+    background: linear-gradient(to bottom right,#EBEBEB, #493673 );
+}
+
+p {
+    font-weight: lighter;
+}
+
+h1 {
+    font-family: Rubik Mono One, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+.page-heading {
+    color: #26241F;
+    font-size: x-large;
+}
+
+h2 {
+    font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    margin-top: 0px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.main-width {
+    margin: auto;
+    align-items: center;
+    padding:  0px 20px;
+    max-width: 1400px;
+}
+
+.textbox {
+    background-color: #26241F;
+}
+
+.text {
+    display: center;
+    max-width: 450px;
+    margin:  5px auto;
+    padding: 20px;
+}
+
+.light-ocean {
+    color: #0388A6;
+    font-size: x-large;
+    max-width: 450px;
+    margin:  5px auto;
+    padding: 20px ;
+    transform: rotate(-5deg);
+}
+
+.light-blueberry {
+    color: #E0D8FF;
+    font-size: x-large;
+    max-width: 450px;
+    margin:  5px auto;
+    padding: 20px ;
+    transform: rotate(-5deg);
+}
+
+.white {
+    color: #EBEBEB;
+    font-size: x-large;
+    max-width: 450px;
+    margin:  5px auto;
+    padding: 20px ;
+    transform: rotate(-5deg);
+
+}
+
+
+/*Links*/
+a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cta {
+    padding:  4px 8px;
+    background-color: #0388A6;
+
+    margin: 10px;
+}
+
+
+.cta:hover {
+    padding: 10px 17px;
+    background-color: #493673;
+}
+
+#selected {
+    padding: 10px 17px;
+    background-color: #493673;
+}
+
+/*HEADER*/
+header {
+    background-color: #26241F;
+    padding: 20px;
+}
+
+#header-content {
+    align-items: flex-end;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+}
+
+header img {
+    max-width: 150px;
+}
+
+#logo {
+    flex: 1;
+}
+
+#header-menu {
+    flex: 2;
+}
+
+.header-menu-nav {
+    display: none;
+}
+
+#hamburger_menu {
+    display: none;
+}
+
+#hamburger_menu:checked ~ .header-menu-nav {
+    display: block;
+}
+
+header label {
+    font-size: xx-large;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #26241F;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+footer nav ul li {
+    padding: 40px;
+}
+
+footer a:hover {
+    color: #0388A6;
+}
+
+/*HOME*/
+.grid_container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-areas: "ex ex exp" "ev ev ev" "vi th th" "to to to";
+    grid-template-columns: repeat(400px, 3);
+}
+
+.grid-box:nth-child(1){grid-area: ex;}
+.grid-box:nth-child(2){grid-area: exp;}
+.grid-box:nth-child(3){grid-area: ev;}
+.grid-box:nth-child(4){grid-area: vi;}
+.grid-box:nth-child(5){grid-area: th;}
+.grid-box:nth-child(6){grid-area: to;}
+
+#Exhibitions {background-image: url(../Images/mammoth-1257288_1920.jpg)}
+#Explore {background-image: url(../Images/vr.jpg)}
+#Events {background-image: url(../Images/scientific-2040795_1280.jpg)}
+#visitus {background-image: url(../Images/library-1132573_1920.jpg);}
+#themoon {background-image: url(../Images/moon.jpg);}
+
+.background-images {
+    min-height: 35vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    display: grid;
+    grid-template-rows: repeat(1fr, 2);
+}
+
+.background-images:hover {
+    filter: grayscale(100%);
+}
+
+.background-blur {
+    grid-row: 2; 
+    align-self: end;
+    height: 100px;
+    background-color: #26241F;
+    opacity: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.background-blur div {
+    align-self: center;
+}
+
+.chevron-right{
+    grid-column: 2;
+    justify-self: end;
+    margin-right: 20px;
+}
+
+.chevron-right i {
+    font-size: xx-large;
+}
+
+#explore-together {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    margin: 20px 0px;
+}
+
+#explore-together img {
+    max-width: 150px;
+}
+
+.grid_container h1,p {
+    margin: 20px;
+}
+
+#textflow-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paw {
+   width: 50px;
+}
+
+/*Events*/
+#events-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:  "sp nh nh" "en en en";
+    margin: 40px 0px;
+}
+
+.events-box:nth-child(1){grid-area: sp;}
+.events-box:nth-child(2){grid-area: nh;}
+.events-box:nth-child(3){grid-area: en;}
+
+.events-box {
+    background-color: #26241F;
+    padding: 20px;
+    border-radius: 2rem;
+    width: fit-content;
+    min-width: 300px;
+}
+
+.image-in-event-box img{
+    width: 100%;
+}
+
+/*Exhibitions*/
+#Exhibitions-flex-container {
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-content: stretch;
+    justify-content: space-around;
+}
+
+.Exhibitions-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Exhibitions-flex-container img {
+    width: 600px;
+    max-height: 400px;
+}
+
+@media only screen and (min-width: 800px) {
+
+    header label {
+        display: none;
+    }
+
+    .header-menu-nav {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    #header-content {
+        align-items: center;
+    }
+    
+    .header-menu-nav {    
+        position: fixed;
+        top: 110px;
+        right: 0px;
+        background-color: #26241F;
+        padding: 20px;
+        z-index: 1000;
+    }  
+
+    .header-menu-nav li {
+        display: block;
+        padding: 20px;
+    }
+    
+    .cta {
+        padding:  4px 8px;
+        background-color: #26241F;
+        border-radius: 5rem;
+        margin: 10px;
+    }
+
+    a {
+        font-size: x-large;
+    }
+
+    #logo {
+        flex: 9;
+    }
+
+    .grid_container {
+        grid-template-areas: "ex" "exp" "ev" "vi" "th" "to";
+}
+
+    #events-grid-container {
+        grid-template-areas:  "sp sp sp" "nh nh nh" "en en en";
+    }
+    
+    #Exhibitions-flex-container img {
+        width: 100%;
+    }
+}
+
