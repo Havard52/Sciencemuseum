@@ -4,7 +4,7 @@ body {
     font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
     background-color:  #EBEBEB;
-    background: linear-gradient(to bottom right,#EBEBEB, #493673 );
+    background: linear-gradient(to bottom, #493673 10% ,#EBEBEB, #493673 );
 }
 
 p {
@@ -13,7 +13,15 @@ p {
 
 h1 {
     font-family: Rubik Mono One, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: larger;
+    font-size: xx-large;
+}
+
+i {
+    color: #0388A6;
+    font-size: xxx-large;
+}
+span {
+    font-size: x-large;
 }
 
 .page-heading {
@@ -33,7 +41,6 @@ h3 {
 
 nav ul {
     list-style: none;
-    display: inline;
 }
 
 nav ul li {
@@ -49,6 +56,8 @@ nav ul li {
 
 .textbox {
     background-color: #26241F;
+    margin: 20px;
+    border-radius: 5rem;
 }
 
 .text {
@@ -83,9 +92,11 @@ nav ul li {
     margin:  5px auto;
     padding: 20px ;
     transform: rotate(-5deg);
-
 }
 
+.textbox img {
+border-radius: 5em 5em 0em 0em;
+}
 
 /*Links*/
 a {
@@ -98,7 +109,6 @@ a {
 .cta {
     padding:  4px 8px;
     background-color: #0388A6;
-
     margin: 10px;
 }
 
@@ -109,7 +119,7 @@ a {
 }
 
 #selected {
-    padding: 10px 17px;
+    padding: 10px 8px;
     background-color: #493673;
 }
 
@@ -157,18 +167,62 @@ header label {
 /*FOOTER*/
 footer {
     background-color: #26241F;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    flex-wrap: wrap;
 }
 
-footer nav ul li {
-    padding: 40px;
+.footer-flex {
+    max-width: 1600px;
+    align-items: center;
+    margin: auto;
+}
+
+#footer-menu {
+    padding: 20px 20px 80px;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer a:hover {
     color: #0388A6;
+}
+
+#footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-info nav ul li {
+    display: block;
+    padding: 5px;   
+}
+
+.footer-info-flex {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-info-flex i{
+    margin-bottom: 20px;
+}
+
+.footer-info-flex span{
+    border-bottom: #0388A6 solid  2px;
+}
+
+.checked i{
+    font-size: medium;
+    margin-bottom: 0px;
+}
+
+iframe {
+    max-width: 250px;
+    max-height: 250px;
+    filter: invert(100%);
+    border-radius: 50%;
 }
 
 /*HOME*/
@@ -178,7 +232,7 @@ footer a:hover {
     padding: 20px;
     display: grid;
     grid-gap: 8px;
-    grid-template-areas: "ex ex exp" "ev ev ev" "vi th th" "to to to";
+    grid-template-areas: "ex ex exp" "ev ev ev" "vi th th";
     grid-template-columns: repeat(400px, 3);
 }
 
@@ -187,7 +241,7 @@ footer a:hover {
 .grid-box:nth-child(3){grid-area: ev;}
 .grid-box:nth-child(4){grid-area: vi;}
 .grid-box:nth-child(5){grid-area: th;}
-.grid-box:nth-child(6){grid-area: to;}
+
 
 #Exhibitions {background-image: url(../Images/mammoth-1257288_1920.jpg)}
 #Explore {background-image: url(../Images/vr.jpg)}
@@ -207,6 +261,7 @@ footer a:hover {
 
 .background-images:hover {
     filter: grayscale(100%);
+    box-shadow: 20px;
 }
 
 .background-blur {
@@ -223,6 +278,10 @@ footer a:hover {
     align-self: center;
 }
 
+.grid_container h1,p {
+    margin: 20px;
+}
+
 .chevron-right{
     grid-column: 2;
     justify-self: end;
@@ -231,33 +290,35 @@ footer a:hover {
 
 .chevron-right i {
     font-size: xx-large;
+    color: #EBEBEB;
 }
 
-#explore-together {
+.flex-home {
+    max-width: 700px;
+    align-content: center;
+    margin: 40px auto;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-bottom: 20px;
-    margin: 20px 0px;
+    justify-content: center;
+    flex-direction: column;  
+    gap: 40px; 
 }
 
-#explore-together img {
-    max-width: 150px;
-}
-
-.grid_container h1,p {
-    margin: 20px;
-}
-
-#textflow-home {
+.flex-home .textbox { 
+    padding: 50px;
+    border-radius:  5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 
-.paw {
-   width: 50px;
+#flex-home-1 {
+    flex-direction: column;
+}
+
+.flex-home .textbox img {
+    max-height: 100px;
+    max-width: 100px;
 }
 
 /*Events*/
@@ -268,20 +329,18 @@ footer a:hover {
     margin: 40px 0px;
 }
 
-.events-box:nth-child(1){grid-area: sp;}
-.events-box:nth-child(2){grid-area: nh;}
-.events-box:nth-child(3){grid-area: en;}
+#events-grid-container .textbox:nth-child(1){grid-area: sp;}
+#events-grid-container .textbox:nth-child(2){grid-area: nh;}
+#events-grid-container .textbox:nth-child(3){grid-area: en;}
 
-.events-box {
-    background-color: #26241F;
-    padding: 20px;
-    border-radius: 2rem;
-    width: fit-content;
-    min-width: 300px;
+
+#events-grid-container img{
+    width: 100%;
+    max-height: 400px;
 }
 
-.image-in-event-box img{
-    width: 100%;
+#events-grid-container .text, .light-blueberry, .light-ocean, .white {
+    padding: 30px;
 }
 
 /*Exhibitions*/
@@ -304,6 +363,46 @@ footer a:hover {
     max-height: 400px;
 }
 
+/*Visit us*/
+
+.grid-container-visitus {
+    display: grid;
+    grid-template-areas: 
+    "sho img img"
+    "foo img img"
+    "acc img img"
+    "adm loc ho ";
+}
+
+.grid-container-visitus div:nth-child(1) {grid-area: img;}
+.grid-container-visitus div:nth-child(2) {grid-area: loc;}
+.grid-container-visitus div:nth-child(3) {grid-area: adm;}
+.grid-container-visitus div:nth-child(4) {grid-area: ho;}
+.grid-container-visitus div:nth-child(5) {grid-area: foo;}
+.grid-container-visitus div:nth-child(6) {grid-area: sho;}
+.grid-container-visitus div:nth-child(7) {grid-area: acc;}
+
+.grid-container-visitus .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.museum-pic {
+    margin: 20px;
+}
+
+.museum-pic img {
+    max-width: 100%;
+    border-radius: 5rem;
+}
+
+.grid-container-visitus div li {
+    padding: 10px;
+    list-style: none;
+}
+
 @media only screen and (min-width: 800px) {
 
     header label {
@@ -318,6 +417,16 @@ footer a:hover {
 @media only screen and (max-width: 800px) {
 
     #header-content {
+        align-items: center;
+    }
+
+    #footer-info {
+        display: none;
+    }
+
+    #footer-menu {
+        flex-direction: column;
+        gap: 20px;
         align-items: center;
     }
     
@@ -361,5 +470,17 @@ footer a:hover {
     #Exhibitions-flex-container img {
         width: 100%;
     }
+
 }
+
+@media only screen and (max-width: 1200px) {
+    .grid-container-visitus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+}
+
+
 
