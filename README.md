@@ -5,7 +5,7 @@
 Community Science Museum 
 ## Description
 
-My first semester project. A website for the fictional Musem "Community Science Museum". The website is purly built in HTML, and CSS.
+My first semester project. A website for the fictional Musem "Community Science Museum" .The site is intended to appeal to both children and adults. The website is purly built in HTML, and CSS.
 
 
 ## Built With
