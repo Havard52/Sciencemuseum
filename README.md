@@ -1,4 +1,4 @@
-# RainyDays
+# Community Science Museum
 
 ![image](images/Logo.png)
 
